@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+	<style type="text/css">
+	input {
+		outline: none;
+		margin-top: 30px;
+		border: 1px solid #888;
+		color: #fff;
+	}
+	input:focus {
+	  border: 1px solid #1ab188;
+	}
+	#myForm {
+		position: relative;
+    margin: 0 auto;
+		width: 440px;
+		height: auto;
+		background-color: #24323d;
+		padding: 35px;
+		text-align: center;
+	}
+	form[name="sign"] {
+		display: none;
+	}
+	form[name="login"] {
+		display: none;
+	}
+	.tabs {
+		display: inline-block;
+		float: left;
+		width: calc(100% / 2);
+		height: 45px;
+		margin: 0 0 30px 0;
+		padding: 0;
+		border: none;
+		font-size: 16px;
+		cursor: pointer;
+		background-color: #435259;
+		color: #ccc;
+	}
+	input.active {
+		background-color: #1ab188;
+	}
+	#myForm span {
+		color: #fff;
+		font-size: 32px;
+	}
+	.formData {
+		width: 100%;
+		height: 34px;
+		padding-left: 10px;
+		background-color: transparent !important;
+		box-sizing: border-box;
+	}
+	.wrap-names {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	.wrap-names input.formData {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		width: 200px;
+	}
+	button.start {
+		width: 100%;
+		height: 58px;
+		margin-top: 30px;
+		background-color: #1ab188;
+		color: #fff;
+		text-transform: uppercase;
+		font-size: 28px;
+		border: none;
+		cursor: pointer;
+	}
+	form[name="login"] .formData, form[name="login"] .start {
+		width: 75%;
+	}
+	#sign.active ~ form[name="sign"] {
+		display: block;
+	}
+	#login.active ~ form[name="login"] {
+		display: block;
+	}
+	.isError {
+		border: 1px solid red;
+	}
+</style>
+</head>
+<body>
+		
+	<div id="myForm">
+		<input id="sign" type="button" class="tabs active" value="Sign Up" />
+		<input id="login" type="button" class="tabs" value="Log In" />
+
+		<!-- Form for Signing up -->
+		<form action="" method="get" name="sign">	
+			<span>Sign Up For Free</span>
+			<div class="wrap-names">
+				<input class="formData" type="text" name="firstName" placeholder="First Name *" />
+				<input class="formData" type="text" name="lastName" placeholder="Last Name *" />
+			</div>
+			<input class="formData" type="email" name="email" placeholder="Email Address *" />
+			<input class="formData" name="password" type="password" placeholder="Set A Password *" />
+			<input class="formData" name="confirmed_password" type="password" placeholder="Confirm Password *" />
+			<button class="start" type="button">Get started</button>
+		</form>
+		<!-- End of form Singning Up -->
+	
+		<!-- Form for loging in -->
+		<form action="" method="get" name="login">
+			<span>Enter login and password</span>
+			<input class="formData" type="text" name="login" placeholder="Login" />
+			<input class="formData" type="password" name="pass" placeholder="Password" />
+			<button class="start" type="button">Get started</button>
+		</form>
+		<!-- Container for Loging in -->
+	</div>
+
+	<script type="text/javascript" src="forms.js"></script>
+</body>
+</html>

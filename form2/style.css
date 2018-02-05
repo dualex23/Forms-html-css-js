@@ -1,0 +1,101 @@
+* {
+  outline: none;
+}
+/*
+Валидация
+*/
+.error {
+  border: 3px solid red;
+}
+.no-error {
+  background-color: #bbfaca;
+}
+form {
+  margin: 0 auto;
+  background-color: #054586;
+  width: 500px;
+  height: auto;
+  padding: 20px 70px;
+}
+
+input, legend {
+  margin-bottom: 15px;
+}
+legend {
+  font-size: 28px;
+  color: #fff;
+}
+input, select {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+select {
+  padding-left: 10px;
+}
+input[type="checkbox"] {
+  display: inline-block;
+  float: left;
+  width: 25px;
+  height: 18px;
+  margin: 0;
+}
+p.icon {
+  margin: 0;
+  padding: 0;
+}
+p label {
+  color: #fff;
+}
+#names input {
+  width: 240px;
+  padding-left: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+#names {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+#btn {
+  padding: 13px 15px;
+  font-size: 14px;
+  color: #666;
+}
+p.icon {
+  position: relative;
+}
+p.icon::before {
+  font-family: Fontawesome;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 28px;
+  color: #0473e3;
+}
+p.icon:nth-child(1)::before {
+  content: "\f007";
+}
+p.icon:nth-child(2)::before {
+  content: "\f084";
+}
+p.icon:nth-child(3)::before {
+  content: "\f084";
+}
+p.icon:nth-child(4)::before {
+  content: "\f0e0";
+  left: 13px;
+}
+

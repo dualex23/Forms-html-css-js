@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Form 2</title>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form action="" method="get" name="curentName">
+      <legend>Form with icons</legend>
+      <div id="myForm">
+        <p class="icon"><input type="text" name="name" placeholder="Username" /></p>
+        <p class="icon"><input type="password" name="pass" placeholder="Choose your password" /></p>
+        <p class="icon"><input type="password" name="conf_pass" placeholder="Confirm password" /></p>
+        <p class="icon"><input type="email" name="email" placeholder="Email" /></p>
+        
+        <div id="names">
+          <input type="text" name="firstName" id="firstName" value="" placeholder="First Name" />
+          <input type="text" name="lastName" id="lastName" value="" placeholder="Last Name" />
+        </div>
+      </div>
+      
+      <select name="sex" id="sex">
+        <option selected disabled>--select gender--</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      
+      <p><input type="checkbox" name="terms" id="" value="" />
+      <label for="terms">I agree with terms and conditions.</label></p>
+      <p><input type="checkbox" name="news" id="" value="" />
+      <label for="news">I want to receive news and offers.</label></p>
+      
+      <button id="btn" type="button">Sign up</button>
+    </form>
+  </body>
+  <script src="form2.js"></script>
+</html>
