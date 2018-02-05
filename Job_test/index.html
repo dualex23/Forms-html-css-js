@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" media="screen and (max-width: 480px)" href="media.css">
+</head>
+<body>
+
+	<section id="container">
+
+		<div id="container-wrapper">
+			<div id="logo"><img src="images/logo.svg"></div>
+		</div>
+		<div id="container-form">
+
+			<div class="wrapper-form">
+				
+				<form name="signUp">
+					<legend>Sign Up</legend>
+					<div class="status-inner"><div class="status-text"></div></div>
+					<input type="text" placeholder="Name">
+					<input type="email" id="mail" name="mail" placeholder="Email">
+					<input type="email" name="mail" placeholder="Re-enter email">
+					<input type="password" id="password" name="password" placeholder="Password">
+					<input type="password" id="re-password" name="re-password" placeholder="Re-enter password">
+
+					<p><label><input type="checkbox"> Receive our weekly newsletter and other occasional updates</label></p>	
+				</form>
+
+				<form name="signIn">
+					<legend>Log In</legend>
+					<div class="status-inner"><div class="status-text"></div></div>
+
+					<input type="text" placeholder="Username">
+					<input type="password" placeholder="Password">
+					<p><label><input type="checkbox" name="">Stay signed in</label><a href="#">Forgot password?</a></p>
+				</form>
+
+				<form name="forgotPass">
+					<legend>Forgot your password</legend>
+					<div class="status-inner"><div class="status-text"></div></div>
+					<p>Enter the email address you used to sign up and we'll send you a link to reset your password.</p>
+					<input type="email" name="mail" placeholder="Email">
+					<button class="btn forgotPass" type="button">Continue</button>
+				</form>
+				<div class="forgotPass answer">
+					<h2>Forget your password</h2>
+					<p>Okay, we sent an email to ___ with a link to reset your password.</p>
+					<span>If you don't receive the email within a few minutes, pleade <a href="#">try again</a>.</span>
+				</div>
+
+				<div class="buttons">
+					<button id="sign" type="button" class="btn active">Sign Up</button>
+					<button id="login" type="button" class="btn">Log In</button>
+					<span>By signing up, you agree to our <a href="#">terms of use,</a> <a href="#">privacy policy</a>, and <a href="#">cookie policy</a></span>
+				</div>
+
+			</div>
+
+		</div>	
+	</section>
+	
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

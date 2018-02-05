@@ -1,0 +1,28 @@
+body {
+	width: 100%;
+	height: auto;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+#container #logo {
+	display: none;
+}
+#container {
+	height: 800px;
+}
+#container-wrapper {
+	background-image: url(images/m-geran-de-klerk-136351.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+	width: 100%;
+	height: 45%;
+}
+#container-form {
+	width: 100%;
+	height: 60%;
+}
+#container-form .wrapper-form {
+	height: 100%;
+}

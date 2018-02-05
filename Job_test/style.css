@@ -1,0 +1,151 @@
+* {
+	margin: 0;padding: 0;
+}
+a {
+	text-decoration: none;
+	color: #1eaaf1;
+}
+input, button {
+	outline: none;
+}
+body {
+	width: 1180px;
+	height: 100%;
+	padding: 125px;
+	background-color: #1eaaf1;
+	font-size: 14px;
+	color: #888;
+}
+#container {
+	position: relative;
+	width: 100%;
+	height: 660px;
+	background-color: #fff;
+	border-radius: 5px;
+  box-shadow: 18px 30px 95px -29px #333;
+}
+#logo {
+  position: absolute;
+  top: 50px;
+  left: -10px;
+  width: 210px;
+  height: 65px;
+  background-color: #fff;
+}
+#logo:after {
+  right: -65px;
+  top: 0;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  border-left-color: #fff;
+  border-width: 32.5px;
+}
+#logo img {
+	margin: 8% 28.5%;
+}
+#container-wrapper {
+	display: inline-block;
+	width: 52%;
+	height: 100%;
+	background-image: url(images/geran-de-klerk-136351.png);
+	/*background-image: url(images/pedro-lastra-157071.png);*/
+	background-repeat: no-repeat;
+}
+/* Форма */
+#container-form {
+	position: relative;
+	display: inline-block;
+	width: 45%;
+	height: 100%;
+}
+#container-form .wrapper-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: auto;
+  transform: translate(-50%,-50%);
+}
+form[name="signUp"] {
+	display: block;
+}
+form[name="signIn"] {
+	display: none;
+}
+form[name="forgotPass"] {
+	display: none;
+}
+form {
+	width: 320px;
+	height: auto;
+}
+form legend{
+	font-size: 26px;
+	color: #333;
+	margin-bottom: 15%;
+}
+input {
+	width: 100%;
+  height: 38px;
+  margin-bottom: 10px;
+  padding-left: 5%;
+  font-size: 14px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input[type="checkbox"] {
+  float: left;
+  width: 25px;
+  height: 15px;
+  display: inline-block;
+}
+p {
+	margin: 2% 5% 5% 0;
+}
+form[name="signIn"] p {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+.btn, .btn.forgotPass {
+  display: inline-block;
+  width: 148px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid #1eaaf1;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #1eaaf1;
+  font-size: 12px;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+.active, .btn:hover {
+	color: #fff;
+	background-color: #1eaaf1;
+}
+form[name="forgotPass"].shown ~ .buttons {
+	display: none;
+}
+form[name="forgotPass"] p {
+	font-size: 14px;
+}
+.forgotPass.answer {
+	display: none;
+}
+span {
+	display: inline-block;
+	margin-top: 5%;
+	margin-left: 10%;
+}
+
+
